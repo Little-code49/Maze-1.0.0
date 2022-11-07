@@ -5,6 +5,9 @@ This is Maze, a game. If you want to play it, you can open the index.html file w
 Screenshot:
 
 ![Screenshot](./Resources/example.png)
+
+Video:
+<video src="./Resources/example.mp4">
 ---
 
 If your also a coder like me and you want to put IT into your website then you need to do these steps:
