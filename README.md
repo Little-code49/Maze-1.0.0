@@ -7,7 +7,7 @@ Screenshot:
 ![Screenshot](./Resources/example.png)
 
 Video:
-<video width="450" src="./Resources/example.mp4" autoplay>
+<video src="./Resources/example.mp4" autoplay loop>
 ---
 
 If your also a coder like me and you want to put IT into your website then you need to do these steps:
