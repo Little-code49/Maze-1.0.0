@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Canvas Maze Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Resources/pic.ico" type="image/x-icon">
+</head>
+
+<body>
+    <center>
+        <div id="wrapper" style="margin-left:auto; margin-right:auto;">
+            <h1 id="heading" style="text-decoration-style: solid; color: #F8F8F8; width: 15%;
+                 margin-top: 0px; margin-bottom: 35px">
+                Maze Game</h1><br>
+            <div id="maze">
+                <div id="c"
+                    style="margin-left:auto; margin-right:auto;margin-bottom: 10px;text-align: center;width: 10%;font-size: large">
+                </div>
+
+                <canvas id="canvas" width="650" height="650" style="margin-left:auto; margin-right:auto">
+                    This text is displayed if your browser does not support HTML5 Canvas.
+                </canvas>
+                <br>
+                <button id="restart" onclick="
+                if(restart == true){
+                    document.location.reload()
+                }
+                ">Play Again?</button>
+            </div>
+            <!-- This is for phone -->
+            <div id="controls">
+                <button id="up" onclick="controls.up = true">↑</button><br>
+                <button id="left" onclick="controls.left = true">←</button>
+                <button id="down" onclick="controls.down = true">↓</button>
+                <button id="right" onclick="controls.right = true">→</button>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 class="gamehead"></h2>
+                    </div>
+                    <div class="modal-footer">
+                        <h2 id="demo" onmouseover="" style="cursor:pointer;">Play Again?</h2>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </center>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>

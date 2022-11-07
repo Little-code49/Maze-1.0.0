@@ -1,0 +1,154 @@
+var style = `
+* {
+padding: 0;
+margin: 0;
+ font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 24px; font-style: normal;
+     font-variant: normal; font-weight: 700; line-height: 26.4px; 
+}
+
+html {
+background-color: black;
+}
+
+
+#heading {
+text-align: center;
+margin-top: 15px;
+margin-bottom: 15px;
+font-size: xx-large;
+background: linear-gradient(135deg, red, rgba(255, 255, 0, 0.784), blue);
+animation: color 15s linear infinite;
+}
+
+@keyframes color {
+0% {
+    filter: hue-rotate(0deg);
+}
+
+50% {
+    filter: hue-rotate(360deg);
+}
+
+100% {
+    filter: hue-rotate(0deg);
+}
+}
+
+#heading {
+margin: 0 auto
+}
+
+#canvas {
+display: block;
+margin: 0 auto;
+
+}
+
+#c {
+background: #eeeeee;
+display: block;
+margin: 0 auto;
+}
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 20%;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+width: 30%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+from {
+    top: -300px;
+    opacity: 0
+}
+
+to {
+    top: 0;
+    opacity: 1
+}
+}
+
+@keyframes animatetop {
+from {
+    top: -300px;
+    opacity: 0
+}
+
+to {
+    top: 0;
+    opacity: 1
+}
+}
+
+/* The Close Button */
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: #41d9f4;
+color: white;
+text-align: center;
+height: 50%;
+}
+
+.modal-body {
+padding: 2px 16px;
+}
+
+.modal-footer {
+padding: 2px 16px;
+background-color: #f4bc42;
+color: white;
+text-align: center;
+height: 50%;
+}
+
+#up, #down, #left, #right {
+background-color: rgb(139, 139, 139);
+width: 40px;
+height: 40px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: larger;
+
+}
+
+#controls {
+position: absolute;
+}
+`
+
+export default style
